@@ -115,6 +115,7 @@ fn is_balanced(input: &Equation) -> bool {
         }
     }
 
+    dbg!("Equality", product_sum.hashmap == reagent_sum.hashmap);
     product_sum.hashmap == reagent_sum.hashmap
 }
 
@@ -149,11 +150,9 @@ fn main() {
     let mut equation: Equation = parse_input(&args);
     let i = 0;
 
-    if is_balanced(&equation) {
-        println!("Balanced equation: {}", (&equation));
-        return;
-    } else {
-        balance(&mut equation, 0);
+    while !is_balanced(&input) {
+
+        // Balance input
     }
 
     /* while !is_balanced(&equation) {

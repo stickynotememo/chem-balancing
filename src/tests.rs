@@ -47,7 +47,7 @@ fn test_parse_input() {
     let actual_output = parse_input(input);
 
     // Assert
-    let expected_output: Equation = (
+    let expected_output = Equation(
         vec![Molecule {
             coefficient: 1,
             hashmap: HashMap::from([('C', 1), ('O', 2)]),
